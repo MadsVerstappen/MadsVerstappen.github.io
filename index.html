@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stylish Apparel Shop</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header id="header">
+        <nav>
+            <div class="logo">Stylish Apparel</div>
+            <ul class="navbar">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><input type="search" placeholder="Search..." class="search-bar"></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="section">
+      <div class="product-banner">
+          <img src="file:///C:/Users/Hp/Downloads/WhatsApp%20Image%202024-01-09%20at%2020.39.58%20(1).jpeg" alt="Stylish Apparel Collection">
+          <div class="banner-content">
+              <h2 class="banner-title">Summer Collection 2024</h2>
+              <p class="banner-text">Discover the latest trends and enjoy exclusive offers on stylish outfits. Elevate your wardrobe with new arrivals!</p>
+              <button class="btn-shop-now">Shop Now</button>
+          </div>
+      </div>
+  </section>
+  
+
+    <section id="products" class="section">
+        <h2>Featured Products</h2>
+        <div class="product-grid">
+            <!-- Example Product Box -->
+            <div class="product">
+                <div class="product-image" style="background-image: url('file:///C:/Users/Hp/Downloads/WhatsApp%20Image%202024-01-09%20at%2020.39.58%20(1).jpeg');"></div>
+                <div class="product-info">
+                    <p>Stylish Shirt - $25</p>
+                    <div class="product-buttons">
+                        <button class="btn-view">View Product</button>
+                        <button class="btn-cart">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="product">
+                <div class="product-image" style="background-image: url('file:///C:/Users/Hp/Downloads/WhatsApp%20Image%202024-01-09%20at%2020.39.58%20(1).jpeg');"></div>
+                <div class="product-info">
+                    <p>Elegant Dress - $40</p>
+                    <div class="product-buttons">
+                        <button class="btn-view">View Product</button>
+                        <button class="btn-cart">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="product">
+                <div class="product-image" style="background-image: url('file:///C:/Users/Hp/Downloads/WhatsApp%20Image%202024-01-09%20at%2020.39.58%20(1).jpeg');"></div>
+                <div class="product-info">
+                    <p>Classic Shoes - $50</p>
+                    <div class="product-buttons">
+                        <button class="btn-view">View Product</button>
+                        <button class="btn-cart">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="products" class="section">
+      <h2>Our Products</h2>
+      <div class="product-grid">
+          <!-- Product 1 -->
+          <div class="product">
+              <img src="file:///C:/Users/Hp/Downloads/WhatsApp%20Image%202024-01-09%20at%2020.39.58%20(1).jpeg" alt="Product 1">
+              <h3>Stylish Jacket</h3>
+              <p>$49.99</p>
+              <button class="btn-view" onclick="viewProduct('product1')">View Product</button>
+              <button class="btn-cart" onclick="addToCart('product1')">Add to Cart</button>
+          </div>
+          
+          <!-- Product 2 -->
+          <div class="product">
+              <img src="file:///C:/Users/Hp/Downloads/WhatsApp%20Image%202024-01-09%20at%2020.39.58%20(1).jpeg" alt="Product 2">
+              <h3>Casual T-shirt</h3>
+              <p>$19.99</p>
+              <button class="btn-view" onclick="viewProduct('product2')">View Product</button>
+              <button class="btn-cart" onclick="addToCart('product2')">Add to Cart</button>
+          </div>
+          
+          <!-- Product 3 -->
+          <div class="product">
+              <img src="file:///C:/Users/Hp/Downloads/WhatsApp%20Image%202024-01-09%20at%2020.39.58%20(1).jpeg" alt="Product 3">
+              <h3>Elegant Dress</h3>
+              <p>$79.99</p>
+              <button class="btn-view" onclick="viewProduct('product3')">View Product</button>
+              <button class="btn-cart" onclick="addToCart('product3')">Add to Cart</button>
+          </div>
+          
+          <!-- Product 4 -->
+          <div class="product">
+              <img src="file:///C:/Users/Hp/Downloads/WhatsApp%20Image%202024-01-09%20at%2020.39.58%20(1).jpeg" alt="Product 4">
+              <h3>Denim Jeans</h3>
+              <p>$39.99</p>
+              <button class="btn-view" onclick="viewProduct('product4')">View Product</button>
+              <button class="btn-cart" onclick="addToCart('product4')">Add to Cart</button>
+          </div>
+  
+          <!-- Product 5 -->
+          <div class="product">
+              <img src="file:///C:/Users/Hp/Downloads/WhatsApp%20Image%202024-01-09%20at%2020.39.58%20(1).jpegd" alt="Product 5">
+              <h3>Running Shoes</h3>
+              <p>$59.99</p>
+              <button class="btn-view" onclick="viewProduct('product5')">View Product</button>
+              <button class="btn-cart" onclick="addToCart('product5')">Add to Cart</button>
+          </div>
+      </div>
+  </section>
+  
+
+    <footer id="footer">
+        <p>© 2024 Stylish Apparel. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+<section id="services" class="section">
+  <h2>Our Services</h2>
+  <div class="service-grid">
+      <div class="service">
+          <i class="fas fa-tshirt"></i>
+          <h3>Custom Apparel</h3>
+          <p>We offer tailored clothing designs for any occasion. Perfect for personal or corporate events.</p>
+      </div>
+      <div class="service">
+          <i class="fas fa-people-carry"></i>
+          <h3>Bulk Orders</h3>
+          <p>Need a large number of outfits? We cater to bulk orders with special discounts for large purchases.</p>
+      </div>
+      <div class="service">
+          <i class="fas fa-shipping-fast"></i>
+          <h3>Fast Delivery</h3>
+          <p>Enjoy speedy delivery options to ensure your orders arrive on time, every time.</p>
+      </div>
+  </div>
+</section>
+
+<section id="contact" class="section">
+  <h2>Contact Us</h2>
+  <p>If you have any questions or need further information, feel free to reach out to us.</p>
+  <form class="contact-form">
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit" class="btn-submit">Send Message</button>
+  </form>
+</section>

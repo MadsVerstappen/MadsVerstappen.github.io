@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Product Details</title>
+</head>
+<body>
+
+<section id="product-detail" class="section">
+    <div class="product-detail-container">
+        <div class="product-image">
+            <img src="" alt="Product Image" id="productImage">
+        </div>
+        <div class="product-info">
+            <h1 id="productName">Product Name</h1>
+            <p class="price" id="productPrice">$0.00</p>
+            <p id="productDescription">Product description goes here.</p>
+            
+            <div class="buttons">
+                <button class="btn-add-to-cart" onclick="addToCart()">Add to Cart</button>
+                <button class="btn-back" onclick="goBack()">Back to Products</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script>
+// Get product data from URL parameters
+const params = new URLSearchParams(window.location.search);
+const productId = params.get('product');
+
+// Simulated product data (this can be fetched from a database or API)
+const products = {
+    product1: {
+        name: "Stylish Jacket",
+        price: "$49.99",
+        description: "This stylish jacket is perfect for casual wear and cold weather. Made from high-quality materials.",
+        image: "product1.jpg"
+    },
+    product2: {
+        name: "Casual T-shirt",
+        price: "$19.99",
+        description: "Comfortable casual t-shirt, ideal for everyday wear.",
+        image: "product2.jpg"
+    }
+};
+
+// Check if the product exists and update the page
+if (products[productId]) {
+    document.getElementById('productImage').src = products[productId].image;
+    document.getElementById('productName').textContent = products[productId].name;
+    document.getElementById('productPrice').textContent = products[productId].price;
+    document.getElementById('productDescription').textContent = products[productId].description;
+} else {
+    document.getElementById('productName').textContent = "Product not found";
+}
+
+// Go back function
+function goBack() {
+    window.history.back();
+}
+
+// Add to cart function (optional)
+function addToCart() {
+    window.location.href = `cart.html?product=${productId}`;
+}
+</script>
+
+</body>
+</html>
